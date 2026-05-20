@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillBridge Academy — A hands-on web development learning platform. Master HTML, CSS, and JavaScript through real-world projects and mentor-guided roadmaps." />
+  <title>SkillBridge Academy — Learn Practical Web Development</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       1. HEADER / NAVBAR
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="SkillBridge Academy Home">
+        <span class="logo-icon" aria-hidden="true">S</span>
+        SkillBridge
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="#contact" class="btn btn-primary nav-cta">Join Waitlist</a>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#programs">Programs</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: auto; text-align: center;">Join Waitlist</a>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ============================================
+       2. HERO SECTION
+       ============================================ -->
+  <section class="hero section" id="home">
+    <div class="container">
+      <!-- Left: Content -->
+      <div class="hero-content reveal">
+        <span class="section-label">Now Enrolling — Cohort 2026</span>
+        <h1 class="hero-title">
+          Learn to Build the Web,<br />
+          <span class="highlight">One Project at a Time</span>
+        </h1>
+        <p class="hero-description">
+          SkillBridge Academy teaches practical frontend development through hands-on projects, mentor-style guidance, and a clear roadmap — from your first line of HTML to a polished portfolio.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#programs" class="btn btn-primary">Explore Programs</a>
+          <a href="#roadmap" class="btn btn-secondary">See Roadmap</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">12K+</span>
+            <span class="stat-label">Learners</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dashboard Mockup -->
+      <div class="hero-visual reveal">
+        <div class="dashboard-card">
+          <div class="dashboard-header">
+            <div class="dashboard-greeting">
+              <span>Welcome back,</span>
+              <strong>Tuhin M.</strong>
+            </div>
+            <div class="dashboard-avatar" aria-hidden="true">T</div>
+          </div>
+
+          <div class="dashboard-progress">
+            <div class="progress-label">
+              <span>Overall Progress</span>
+              <span>72%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 72%"></div>
+            </div>
+          </div>
+
+          <div class="dashboard-courses">
+            <div class="mini-course">
+              <div class="mini-course-icon html" aria-hidden="true">🟧</div>
+              <div class="mini-course-info">
+                <strong>HTML Foundations</strong>
+                <span>12 / 12 lessons</span>
+              </div>
+              <span class="mini-course-status active">Done</span>
+            </div>
+            <div class="mini-course">
+              <div class="mini-course-icon css" aria-hidden="true">🟦</div>
+              <div class="mini-course-info">
+                <strong>CSS Responsive</strong>
+                <span>8 / 10 lessons</span>
+              </div>
+              <span class="mini-course-status active">Active</span>
+            </div>
+            <div class="mini-course">
+              <div class="mini-course-icon js" aria-hidden="true">🟨</div>
+              <div class="mini-course-info">
+                <strong>JavaScript Basics</strong>
+                <span>0 / 14 lessons</span>
+              </div>
+              <span class="mini-course-status upcoming">Upcoming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. ABOUT SECTION
+       ============================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why SkillBridge</span>
+        <h2 class="section-title">A Better Way to Learn Web Development</h2>
+        <p class="section-subtitle">
+          We focus on practical skills, real-world projects, and guided learning paths so you actually build things — not just watch tutorials.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon projects" aria-hidden="true">🛠️</div>
+          <h3>Hands-On Projects</h3>
+          <p>Every module ends with a real project you can add to your portfolio. No toy examples — you build actual websites and interfaces used in the industry.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon mentor" aria-hidden="true">🧭</div>
+          <h3>Mentor-Style Guidance</h3>
+          <p>Our curriculum is designed like a senior developer guiding a junior. Clear explanations, progressive complexity, and best practices baked in from day one.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon portfolio" aria-hidden="true">💼</div>
+          <h3>Portfolio Building</h3>
+          <p>Graduate with a complete portfolio of responsive websites, interactive components, and clean code. Be job-ready from the start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4. PROGRAMS / FEATURES SECTION
+       ============================================ -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Programs</span>
+        <h2 class="section-title">What You Will Learn</h2>
+        <p class="section-subtitle">
+          Six focused modules covering everything from your first HTML tag to deploying a professional portfolio.
+        </p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">📄</div>
+          <h3>HTML Foundations</h3>
+          <p>Learn semantic HTML5, document structure, forms, accessibility best practices, and how to create well-organized, meaningful web pages.</p>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">🎨</div>
+          <h3>CSS Responsive Design</h3>
+          <p>Master Flexbox, CSS Grid, media queries, and mobile-first design. Build layouts that look polished on every screen size.</p>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">⚡</div>
+          <h3>JavaScript Basics</h3>
+          <p>Understand variables, functions, DOM manipulation, and event handling. Add interactivity and dynamic behavior to your web pages.</p>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">✏️</div>
+          <h3>UI/UX Principles</h3>
+          <p>Learn color theory, typography, spacing, and visual hierarchy. Design interfaces that are beautiful, usable, and accessible.</p>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">🚀</div>
+          <h3>Portfolio Projects</h3>
+          <p>Build five real projects — landing pages, dashboards, and interactive apps — that demonstrate your skills to employers and clients.</p>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon" aria-hidden="true">🎯</div>
+          <h3>Career Readiness</h3>
+          <p>Prepare your GitHub profile, write a developer resume, and learn how to present your work in interviews and freelance proposals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       5. ROADMAP SECTION
+       ============================================ -->
+  <section class="roadmap section" id="roadmap">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Roadmap</span>
+        <h2 class="section-title">Your Learning Journey</h2>
+        <p class="section-subtitle">
+          Follow a clear four-step path from beginner to portfolio-ready developer.
+        </p>
+      </div>
+
+      <div class="roadmap-timeline">
+        <div class="roadmap-step reveal">
+          <div class="step-marker">1</div>
+          <div class="step-content">
+            <h3>Learn the Basics</h3>
+            <p>Start with HTML structure, CSS styling fundamentals, and how the browser renders web pages. Build your first static web page by the end of week one.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-step reveal">
+          <div class="step-marker">2</div>
+          <div class="step-content">
+            <h3>Build Responsive Layouts</h3>
+            <p>Dive into Flexbox, CSS Grid, and media queries. Create layouts that adapt beautifully to mobile, tablet, and desktop screens.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-step reveal">
+          <div class="step-marker">3</div>
+          <div class="step-content">
+            <h3>Add Interactivity</h3>
+            <p>Learn JavaScript to handle user events, validate forms, manipulate the DOM, and create dynamic page elements that respond to user actions.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-step reveal">
+          <div class="step-marker">4</div>
+          <div class="step-content">
+            <h3>Publish Your Portfolio</h3>
+            <p>Combine everything into a polished portfolio website. Deploy it on GitHub Pages, set up a custom domain, and share your work with the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       6. INTERACTIVE DEMO SECTION
+       ============================================ -->
+  <section class="demo section" id="demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Try It</span>
+        <h2 class="section-title">Choose Your Learning Goal</h2>
+        <p class="section-subtitle">
+          Select a focus area below and see a personalized recommendation for your learning path.
+        </p>
+      </div>
+
+      <div class="demo-wrapper reveal">
+        <!-- Selector -->
+        <div class="demo-selector">
+          <h3>What interests you most?</h3>
+          <div class="demo-options">
+            <button class="demo-option" data-goal="frontend" type="button">
+              <span class="demo-option-icon" aria-hidden="true">🏗️</span>
+              Frontend Basics
+            </button>
+            <button class="demo-option" data-goal="responsive" type="button">
+              <span class="demo-option-icon" aria-hidden="true">📱</span>
+              Responsive Design
+            </button>
+            <button class="demo-option" data-goal="javascript" type="button">
+              <span class="demo-option-icon" aria-hidden="true">⚡</span>
+              JavaScript Practice
+            </button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="demo-result" id="demo-result">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       7. TESTIMONIALS SECTION
+       ============================================ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What Our Learners Say</h2>
+        <p class="section-subtitle">
+          Real feedback from students who went from zero coding experience to building professional websites.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I tried three different online courses before SkillBridge. The difference? Here I actually built things. By week two, I had a responsive landing page I was proud to show in my internship interview."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar a1" aria-hidden="true">AP</div>
+            <div class="testimonial-author-info">
+              <strong>Ananya Patel</strong>
+              <span>Computer Science Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The roadmap approach made all the difference. Instead of jumping between random tutorials, I followed a clear path. The portfolio projects gave me real work to showcase on GitHub."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar a2" aria-hidden="true">RK</div>
+            <div class="testimonial-author-info">
+              <strong>Rohan Kumar</strong>
+              <span>Career Switcher</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-text">
+            "As someone with no technical background, I was nervous about learning to code. SkillBridge broke everything into small, manageable steps. The mentor-style explanations felt like having a senior dev right beside me."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar a3" aria-hidden="true">SM</div>
+            <div class="testimonial-author-info">
+              <strong>Sara Mendes</strong>
+              <span>Marketing Professional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       8. FAQ SECTION
+       ============================================ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Got questions? We have answers. If you need more help, reach out through the contact form below.
+        </p>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <span>Do I need any prior coding experience to join?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" role="region">
+            <div class="faq-answer-inner">
+              Not at all. SkillBridge is designed for complete beginners. We start with the very basics of HTML and progressively build your skills. All you need is a computer, a web browser, and the willingness to learn.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <span>How long does it take to complete the program?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" role="region">
+            <div class="faq-answer-inner">
+              Most learners complete the core curriculum in 8 to 12 weeks, spending about 10 hours per week. However, the program is entirely self-paced — you can move faster or slower depending on your schedule and prior knowledge.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <span>What tools or software do I need?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" role="region">
+            <div class="faq-answer-inner">
+              You will need a modern web browser (Chrome, Firefox, or Edge) and a code editor. We recommend Visual Studio Code — it is free and works on Windows, Mac, and Linux. No paid software is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <span>Will I receive a certificate after completing the program?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" role="region">
+            <div class="faq-answer-inner">
+              Yes. Upon completing all modules and portfolio projects, you will receive a digital certificate of completion. More importantly, you will have a GitHub portfolio with five real projects that demonstrate your abilities to potential employers.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <span>Is there a community or support group for learners?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-5" role="region">
+            <div class="faq-answer-inner">
+              Absolutely. All learners get access to our private community where you can ask questions, share your progress, get code reviews from peers, and participate in weekly challenges. Learning together accelerates growth.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       9. CONTACT / ENQUIRY FORM
+       ============================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Start Your Journey</h2>
+        <p class="section-subtitle">
+          Have questions or ready to join? Fill out the form and we will get back to you within 24 hours.
+        </p>
+      </div>
+
+      <div class="contact-wrapper reveal">
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Whether you are exploring options or ready to enroll, we are here to help you take the first step toward becoming a web developer.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📧</div>
+            <span>hello@skillbridge.academy</span>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">📍</div>
+            <span>100% Online — Learn from Anywhere</span>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">⏰</div>
+            <span>Support available Mon — Sat, 9 AM — 6 PM IST</span>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="name" class="form-input" placeholder="Your full name" autocomplete="name" required />
+            <p class="form-error" id="name-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com" autocomplete="email" required />
+            <p class="form-error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Learning Interest <span class="required" aria-hidden="true">*</span></label>
+            <select id="interest" class="form-select" required>
+              <option value="" disabled selected>Select your interest</option>
+              <option value="html-css">HTML &amp; CSS Fundamentals</option>
+              <option value="responsive">Responsive Design</option>
+              <option value="javascript">JavaScript Development</option>
+              <option value="uiux">UI/UX Principles</option>
+              <option value="portfolio">Portfolio Building</option>
+              <option value="full-program">Full Program</option>
+            </select>
+            <p class="form-error" id="interest-error" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="message" class="form-textarea" placeholder="Tell us about your goals and experience level (min. 10 characters)" rows="4" required></textarea>
+            <p class="form-error" id="message-error" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
+
+          <div class="form-success" id="form-success" role="status">
+            ✅ Thank you! Your enquiry has been submitted successfully. We will be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       10. FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="SkillBridge Academy Home">
+            <span class="logo-icon" aria-hidden="true">S</span>
+            SkillBridge
+          </a>
+          <p>Practical web development education through hands-on projects and a clear, mentor-guided roadmap.</p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">⌨</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#programs">Programs</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Programs -->
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <a href="#programs">HTML Foundations</a>
+          <a href="#programs">CSS Responsive Design</a>
+          <a href="#programs">JavaScript Basics</a>
+          <a href="#programs">UI/UX Principles</a>
+          <a href="#programs">Portfolio Projects</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillBridge Academy. All rights reserved.</p>
+        <p class="project-note">Built for DecodeLabs Project 1 — Responsive Frontend Interface</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
