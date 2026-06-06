@@ -152,7 +152,7 @@ Responsive techniques used:
 
 ## 🌐 Live Demo
 
-Live Site: https://nextgendev2029.github.io/task-1-tuhin-mondal/
+Live Site: https://task-1-tuhin-mondal.netlify.app
 
 ---
 
